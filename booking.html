@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Adventure | Smile In Africa Adventures</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Plan My Trip | Smile In Africa Adventures - Bespoke Itineraries</title>
+    <meta name="description"
+        content="Use our interactive trip planner to design your perfect Tanzanian safari. Select your interests and receive a custom itinerary from Smile In Africa Adventures.">
+</head>
+
+<body>
+
+    <nav id="navbar" class="sticky">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Smile In Africa Adventures" class="nav-logo-img">
+            <span class="logo-text">SMILE IN AFRICA</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>`
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-toggle" style="margin-left: 20px;"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <div class="page-wrap">
+        <div class="booking-window" data-aos="zoom-in">
+            <!-- Sidebar -->
+            <div class="booking-nav">
+                <div style="margin-bottom: 50px;">
+                    <h3 style="color: var(--secondary); font-size: 1.2rem; margin-bottom: 10px;">Trip Planner</h3>
+                    <p style="font-size: 0.75rem; color: var(--text-dim);">Hapa ni Nyumbani - Designing your dream
+                        adventure.</p>
+                </div>
+
+                <div class="step-item active">
+                    <div class="step-circle">1</div>
+                    <div><span style="display: block; font-weight: 700;">Interests</span><small
+                            style="font-size: 0.7rem; opacity: 0.7;">What do you love?</small></div>
+                </div>
+
+                <div class="step-item active">
+                    <div class="step-circle">2</div>
+                    <div><span style="display: block; font-weight: 700;">Details</span><small
+                            style="font-size: 0.7rem; opacity: 0.7;">When and how many?</small></div>
+                </div>
+            </div>
+
+            <!-- Form Body -->
+            <div class="booking-body">
+                <form id="bookingForm">
+                    <div class="form-step active">
+                        <h2 style="margin-bottom: 10px;">Customize Your Experience</h2>
+                        <p style="color: var(--text-dim); margin-bottom: 40px;">Select from our core experiences below:
+                        </p>
+
+                        <div class="grid-container"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;">
+                            <div class="choice-card" onclick="toggleSelection(this)">
+                                <i class="fas fa-paw"></i>
+                                <span>Wildlife Safari</span>
+                            </div>
+                            <div class="choice-card" onclick="toggleSelection(this)">
+                                <i class="fas fa-umbrella-beach"></i>
+                                <span>Beach Escape</span>
+                            </div>
+                            <div class="choice-card" onclick="toggleSelection(this)">
+                                <i class="fas fa-mountain"></i>
+                                <span>Mountain Trek</span>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="input-group">
+                                <label>Tentative Date</label>
+                                <input type="date" class="input-field">
+                            </div>
+                            <div class="input-group">
+                                <label>Number of People</label>
+                                <input type="number" min="1" value="2" class="input-field">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Email for Itinerary</label>
+                            <input type="email" class="input-field" placeholder="your@email.com" required>
+                        </div>
+
+                        <div style="margin-top: 30px; text-align: right;">
+                            <button type="submit" class="btn-cta" style="padding: 18px 45px;">Submit Interest</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Footer -->
+    <div class="footer-wave">
+        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+            <path class="wave-path" d="M0,50 C360,120 720,0 1080,80 C1260,120 1380,100 1440,90 L1440,150 L0,150 Z">
+            </path>
+        </svg>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <!-- Newsletter CTA Section -->
+            <div class="footer-cta" data-aos="fade-up">
+                <div class="footer-cta-text">
+                    <h3>ðŸŒÂ Join Our Travel Community</h3>
+                    <p>Subscribe for exclusive deals, travel tips, and insider guides to Tanzania</p>
+                </div>
+                <div class="footer-newsletter">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="button">Subscribe</button>
+                </div>
+            </div>
+
+            <!-- Footer Grid -->
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo.png" alt="Smile In Africa Adventures" class="footer-logo-img">
+                    </div>
+                    <p>Your trusted safari and adventure partner in Tanzania. Experience the heart of Africa with Smile
+                        In Africa Adventures â€”Â where every journey creates unforgettable memories.</p>
+                    <span class="footer-tagline">âœ¨ Your Gateway to African Safari</span>
+                    <div class="social-links">
+                        <a href="#" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="#">Travel Tips</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">Terms & Privacy</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            <span>Address</span>
+                            <p>Arusha, Tanzania</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            <span>24/7 Hotline</span>
+                            <a href="tel:+255747014246">+255 747 014 246</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            <span>Email</span>
+                            <a href="mailto:smileinafrica1@gmail.com">smileinafrica1@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Divider -->
+            <div class="footer-divider"></div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2026 <span>Smile In Africa Adventures</span>. All Rights Reserved.
+                </p>
+                <div class="footer-badges">
+                    <div class="footer-badge">
+                        <i class="fas fa-shield-check"></i>
+                        Verified Agency
+                    </div>
+                    <div class="footer-badge">
+                        <i class="fas fa-award"></i>
+                        Award Winning
+                    </div>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="scroll-top"><i class="fas fa-chevron-up"></i></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+

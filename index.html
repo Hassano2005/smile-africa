@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile In Africa Adventures | Ultimate Tanzanian Safari & Heritage Tours</title>
+    <!-- SEO -->
+    <meta name="description"
+        content="Smile In Africa Adventures - Discover the magic of Tanzania with world-class safaris, Kilimanjaro treks, and Zanzibar escapes. Trusted guides, premium 4x4s, and unforgettable memories.">
+    <meta name="keywords"
+        content="Tanzania Safari, Serengeti Migration, Kilimanjaro Trekking, Zanzibar Tours, Africa Adventure">
+    <!-- Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Professional Navigation -->
+    <nav id="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Smile In Africa Adventures" class="nav-logo-img">
+            <span class="logo-text">SMILE IN AFRICA</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <a href="booking.html" class="btn-cta">Start Booking</a>
+            <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="hero">
+        <video autoplay muted loop id="heroVideo" class="video-bg">
+            <source src="TANZANIA___Travel_Video___Stock_Footage(2160p).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+
+        <!-- Oversized Hero Logo -->
+        <div class="hero-logo-container" data-aos="zoom-in">
+            <img src="logo.png" alt="Smile In Africa Adventures" class="hero-logo">
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="300" style="max-width: 1000px; position: relative; z-index: 2;">
+            <h1>Explore Africa <br><span class="gradient-text">With a Smile</span></h1>
+            <p>Experience world-class safaris and heritage tours in Tanzania. <br><strong>Smile In Africa
+                    Adventures</strong>
+                Your gateway to unforgettable African memories.</p>
+
+            <!-- Trip Chooser -->
+            <div class="hero-search" data-aos="zoom-in" data-aos-delay="400">
+                <div class="search-item">
+                    <label>Destination</label>
+                    <input type="text" placeholder="Serengeti, Zanzibar..." class="search-input">
+                </div>
+                <div class="search-item">
+                    <label>Month</label>
+                    <select class="search-input" style="background:transparent; border:none; color:white;">
+                        <option value="">Anytime</option>
+                        <option value="June">June - Sept (Dry)</option>
+                        <option value="Oct">Oct - Dec (Short Rains)</option>
+                        <option value="Jan">Jan - Feb (Calving)</option>
+                    </select>
+                </div>
+                <div class="search-item">
+                    <label>Travelers</label>
+                    <input type="number" value="2" min="1" class="search-input">
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <button class="btn-cta" style="padding: 12px 30px;">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Popular Destinations -->
+    <section class="destinations">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Popular Destinations</h2>
+            <p>Handpicked places for your next big adventure.</p>
+        </div>
+        <div class="grid-container">
+            <div class="card" data-aos="fade-up">
+                <div class="card-img">
+                    <img src="Screenshot_20260408_201207_Instagram.jpg.jpeg" alt="Serengeti">
+                    <span class="badge-offer">Wildlife King</span>
+                </div>
+                <div class="card-content">
+                    <h3>Serengeti Park</h3>
+                    <p>Experience the Great Migration and the Big Five in their natural habitat.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                        <span style="color: var(--secondary); font-weight: 800;">From $1,450</span>
+                        <a href="packages.html" class="btn-package">View Package</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-img">
+                    <img src="zanzibar beach.webp" alt="Zanzibar">
+                    <span class="badge-offer" style="background:var(--secondary); color:#000;">Island Paradise</span>
+                </div>
+                <div class="card-content">
+                    <h3>Zanzibar Island</h3>
+                    <p>Turquoise waters, historic spice tours, and world-class luxury resorts.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                        <span style="color: var(--secondary); font-weight: 800;">From $850</span>
+                        <a href="packages.html" class="btn-package">View Package</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-img">
+                    <img src="Mount-Kilimanjaro-Tanzania.webp" alt="Kilimanjaro">
+                    <span class="badge-offer">Peak Adventure</span>
+                </div>
+                <div class="card-content">
+                    <h3>Mt. Kilimanjaro</h3>
+                    <p>Challenge yourself to the roof of Africa with professional local guides.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                        <span style="color: var(--secondary); font-weight: 800;">From $2,500</span>
+                        <a href="packages.html" class="btn-package">View Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Itinerary (New Feature from Images) -->
+    <section class="itinerary-section" style="background: rgba(13, 44, 24, 0.3);">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Featured Itinerary</h2>
+            <p>A sample of our world-class safari experiences.</p>
+        </div>
+        <div class="itinerary-container" data-aos="fade-up">
+            <div class="itinerary-dropdown">
+                <span class="dropdown-text">Discover More Details</span>
+                <i class="fas fa-chevron-down dropdown-icon"></i>
+            </div>
+
+            <div class="itinerary-item">
+                <span class="itinerary-day-label"><span>Day 1:</span> Tarangire National Park</span>
+                <p class="itinerary-title">Elephants and Baobabs paradise.</p>
+            </div>
+
+            <div class="itinerary-item">
+                <span class="itinerary-day-label"><span>Day 2:</span> Serengeti National Park</span>
+                <p class="itinerary-title">The core of the Great Migration.</p>
+            </div>
+
+            <div class="itinerary-item">
+                <span class="itinerary-day-label"><span>Day 3:</span> Ngorongoro Crater</span>
+                <p class="itinerary-title">A natural wonder of the world.</p>
+            </div>
+
+            <div class="itinerary-map">
+                <img src="Screenshot_20260408_201101_Instagram.jpg.jpeg" alt="Adventure Map"
+                    style="mix-blend-mode: multiply; opacity: 0.9;">
+                <div class="map-zoom-icon">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+
+            <a href="packages.html" class="btn-request-trip" style="margin-top: 40px;">View Full Itinerary</a>
+        </div>
+    </section>
+
+    <!-- 3. Why Choose Us -->
+    <section class="why-us" style="background: rgba(255,255,255,0.02);">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Why Choose Us</h2>
+            <p>Hapa ni Nyumbani - We treat our guests like family.</p>
+        </div>
+        <div class="grid-container">
+            <div class="card" data-aos="zoom-in" style="text-align: center; padding: 40px;">
+                <div class="service-icon-box" style="margin: 0 auto 25px;"><i class="fas fa-user-shield"></i></div>
+                <h3>Trusted Guides</h3>
+                <p>Expert local guides with over a decade of experience in the wild.</p>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="100" style="text-align: center; padding: 40px;">
+                <div class="service-icon-box" style="margin: 0 auto 25px;"><i class="fas fa-headset"></i></div>
+                <h3>24/7 Support</h3>
+                <p>Always here to assist you from planning until your flight back home.</p>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-delay="200" style="text-align: center; padding: 40px;">
+                <div class="service-icon-box" style="margin: 0 auto 25px;"><i class="fas fa-bus"></i></div>
+                <h3>Safe & Secure</h3>
+                <p>Luxury 4x4 transport and hand-picked premium accommodation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Cinematic Zanzibar -->
+    <section class="cinematic-section"
+        style="padding: 0; min-height: 60vh; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+        <video autoplay muted loop class="video-bg">
+            <source src="ZANZIBAR___CINEMATIC_TRAVEL_VIDEO(2160p).webm" type="video/webm">
+        </video>
+        <div class="hero-overlay" style="background: rgba(0,0,0,0.5);"></div>
+        <div style="position: relative; z-index: 2; text-align: center;" data-aos="zoom-in">
+            <h2 style="font-size: 3.5rem; color: var(--secondary); margin-bottom: 10px;">Paradise Awaits</h2>
+            <p style="font-size: 1.5rem; color: white;">Feel the rhythm of the ocean in Zanzibar.</p>
+        </div>
+    </section>
+
+    <!-- 5. CTA Section -->
+    <section class="cta-section"
+        style="background-image: linear-gradient(rgba(13, 44, 24, 0.9), rgba(5, 16, 9, 0.9)), url('Screenshot_20260408_201101_Instagram.jpg.jpeg'); background-size: cover; text-align: center; padding: 120px 10%;">
+        <div data-aos="zoom-in">
+            <h2 style="font-size: clamp(2rem, 5vw, 3.5rem); color: var(--secondary); margin-bottom: 25px;">Ready to
+                Start Your Journey?</h2>
+            <p
+                style="margin-bottom: 40px; color: white; font-size: 1.2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Contact us today to receive a free, personalized itinerary for your bespoke Tanzanian holiday.</p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="booking.html" class="btn-cta" style="padding: 18px 50px;">Plan My Trip</a>
+                <a href="contact.html" class="btn-cta"
+                    style="background: transparent; border: 2px solid var(--secondary); color: var(--secondary) !important;">Contact
+                    Experts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <div class="footer-wave">
+        <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+            <path class="wave-path" d="M0,50 C360,120 720,0 1080,80 C1260,120 1380,100 1440,90 L1440,150 L0,150 Z">
+            </path>
+        </svg>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <!-- Newsletter CTA Section -->
+            <div class="footer-cta" data-aos="fade-up">
+                <div class="footer-cta-text">
+                    <h3>Join Our Travel Community</h3>
+                    <p>Subscribe for exclusive deals, travel tips, and insider guides to Tanzania</p>
+                </div>
+                <div class="footer-newsletter">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="button">Subscribe</button>
+                </div>
+            </div>
+
+            <!-- Footer Grid -->
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo.png" alt="Smile In Africa Adventures" class="footer-logo-img">
+                    </div>
+                    <p>Your trusted safari and adventure partner in Tanzania. Experience the heart of Africa with Smile
+                        In Africa Adventures where every journey creates unforgettable memories.</p>
+                    <span class="footer-tagline"> Your Gateway to African Safari</span>
+                    <div class="social-links">
+                        <a href="#" class="instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="#">Travel Tips</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">Terms & Privacy</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            <span>Address</span>
+                            <p>Arusha, Tanzania</p>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            <span>24/7 Hotline</span>
+                            <a href="tel:+255747014246">+255 747 014 246</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            <span>Email</span>
+                            <a href="mailto:smileinafrica1@gmail.com">smileinafrica1@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Divider -->
+            <div class="footer-divider"></div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2026 <span>Smile In Africa Adventures</span>. All Rights Reserved.
+                </p>
+                <div class="footer-badges">
+                    <div class="footer-badge">
+                        <i class="fas fa-shield-check"></i>
+                        Verified Agency
+                    </div>
+                    <div class="footer-badge">
+                        <i class="fas fa-award"></i>
+                        Award Winning
+                    </div>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div id="scroll-top"><i class="fas fa-chevron-up"></i></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
